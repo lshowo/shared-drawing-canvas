@@ -6,8 +6,8 @@ function setup() {
 	// Start a socket connection to the server
 	// Some day we would run this server somewhere else
 	//socket = io.connect('http://127.0.0.1:3000');
-	socket = io.connect('http://localhost:3000'); 
-
+	//socket = io.connect('http://localhost:3000'); 
+	socket = io.connect('https://demo-shared-drawing-canvas.herokuapp.com/'); 
 
 	// anonymous callback function
 	socket.on('mouse',
