@@ -6,8 +6,8 @@ function setup() {
 	// Start a socket connection to the server
 	// Some day we would run this server somewhere else
 	//socket = io.connect('http://127.0.0.1:3000');
-	//socket = io.connect('http://localhost:3000'); //部署到服务器必须写真实服务器ip地址，不能写hostname
-	socket = io.connect('ws://xxxx.xxxx.xxxx.xxxx:3000');
+	socket = io.connect('http://localhost:3000'); 
+
 
 	// anonymous callback function
 	socket.on('mouse',
