@@ -1,7 +1,10 @@
+// assign our port number to be whatever heroku give us OR the dafault 3000
+var PORT = process.env.PORT || 3000;
 const cors = require('cors')
 const express = require('express');
-const app = express();
-const server = app.listen(3000, () => {
+const app = express();   
+
+const server = app.listen(PORT, () => {
     console.log('My socket server is running at 127.0.0.1:3000')
   })
 
